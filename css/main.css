@@ -22,14 +22,20 @@ div {
 #name{
 	font-size: 100px;
 	color: cornsilk;
+	margin-left: 75px;
 }
 
 #ham{
-	margin-left: 272px;
+	margin-left: 900px;
+}
+
+#hamrow{
+	padding-bottom: 0px;
 }
 
 body{
 	background-color: black;
+	font-family: arvo, serif;
 }
 
 #pics{
@@ -37,70 +43,102 @@ body{
 	padding: 0;
 }
 
-.diy-slideshow{
-position: relative;
-display: block;
-overflow: hidden;
-}
-figure{
-position: absolute;
-opacity: 0;
-transition: 1s opacity;
-}
-figcaption{
-position: absolute;
-font-family: sans-serif;
-font-size: .8em;
-bottom: .75em;
-right: .35em;
-padding: .25em;
-color: #fff;
-background: rgba(0,0,0, .25);
-border-radius: 2px;
-}
-figcaption a{
-color: #fff;
-}
-figure.show{
-opacity: 1;
-position: static;
-transition: 1s opacity;
-}
-.next, .prev{
-color: #fff;
-position: absolute;
-background: rgba(0,0,0, .6);
-top: 50%;
-z-index: 1;
-font-size: 2em;
-margin-top: -.75em;
-opacity: .3;
-user-select: none;
-}
-.next:hover, .prev:hover{
-cursor: pointer;
-opacity: 1;
-}
-.next{
-right: 0;
-padding: 10px 5px 15px 10px;
-border-top-left-radius: 3px;
-border-bottom-left-radius: 3px;
-}
-.prev{
-left: 0;
-padding: 10px 10px 15px 5px;
-border-top-right-radius: 3px;
-border-bottom-right-radius: 3px;
+@import url(http://fonts.googleapis.com/css?family=Arvo:700);
+
+/* @Reset */
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
-figure{
-position: absolute;
-opacity: 0;
-transition: 1s opacity;
+/* @Utility */
+
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-figure.show{
-opacity: 1;
-position: static;
-transition: 1s opacity;
+
+/* @Base Styles */
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* @Layout */
+.logo {
+    width: 60%;
+    min-width: 160px;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.toggle {
+    width: 50px;
+    height: 40px;
+    float: right;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 10;
+    background: url(http://i1367.photobucket.com/albums/r792/acochran89/three-line_zps58474864.png) no-repeat 50% 50%;
+    background-size: cover;
+    position: absolute;
+    top: 1em;
+    right: 20px;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    margin-right: 6%;
+    margin-top: 6%;
+}
+
+.menu {
+    position: fixed;
+    top: -11em;
+    left: 0;
+    width: 100%;
+    background: black;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.menu ul {
+    padding: 0px;
+}
+
+.menu li {
+    padding: 18px 0;
+    text-align: center;
+    font-size: 1em;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: gray;
+}
+
+.rotate {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.open {
+    -webkit-transform: translateY(10em);
+    transform: translateY(15em);
 }
