@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body>
+<body id="yoyo">
 	<header id="heed">
 	<div id="name" class="col-xs-6">
 				<marquee id="name" behavior="alternate"><blink>Axel Tanner</blink></marquee> 
@@ -21,20 +21,38 @@
             </nav>
         </div>
     </header>
-	<div class="container">
-		
-		<div class="row">
-			<div id="pics" class="col-xs-3">
-				<img class="img-responsive" src="http://www.gannett-cdn.com/-mm-/a2f59ff1d76723d91a572c7a25b391e512e14e48/c=0-0-534-400&r=x404&c=534x401/local/-/media/StCloud/2014/05/21/baseball.jpg">
-			</div>
-			<div id="pics" class="col-xs-3">
-				<img class="img-responsive" src="http://www.gannett-cdn.com/-mm-/a2f59ff1d76723d91a572c7a25b391e512e14e48/c=0-0-534-400&r=x404&c=534x401/local/-/media/StCloud/2014/05/21/baseball.jpg">
-			</div>
-			<div id="pics" class="col-xs-3">
-				<img class="img-responsive" src="http://www.gannett-cdn.com/-mm-/a2f59ff1d76723d91a572c7a25b391e512e14e48/c=0-0-534-400&r=x404&c=534x401/local/-/media/StCloud/2014/05/21/baseball.jpg">
-			</div>
-		</div>
-	</div>
+
+	 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="baseball2.jpg" alt="First slide">
+          
+        </div>
+        <div class="item">
+          <img src="soldier2.jpg" alt="Second slide">
+          
+        </div>
+        <div class="item">
+          <img src="dog2.jpg" alt="Third slide">
+          
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>>

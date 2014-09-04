@@ -3,6 +3,7 @@ div {
 	border-width: 5px;
 	border-color: black;
 	padding: 30px;
+	background-color: black;
 }
 
 .container {
@@ -41,6 +42,10 @@ body{
 #pics{
 	margin-left: 67px;
 	padding: 0;
+}
+
+#yoyo{
+	background-color: black;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Arvo:700);
