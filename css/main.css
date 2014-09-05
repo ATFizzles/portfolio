@@ -50,6 +50,7 @@ body{
 
 #heed{
 	height: 222px;
+	margin-top: -10px;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Arvo:700);
@@ -153,8 +154,27 @@ a {
 }
 
 .btn-primary{
-	margin-left: 575px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 200px;
 	height: 50px;
 	background-color: gray;
+}
+
+#galtext{
+	font-size: 100px;
+	margin-top: 50px;
+	color: cornsilk;
+	margin-left: 75px;
+}
+
+.carousel.slide{
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modal-content{
+	height: 500px;
 }
