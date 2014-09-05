@@ -48,6 +48,10 @@ body{
 	background-color: black;
 }
 
+#heed{
+	height: 222px;
+}
+
 @import url(http://fonts.googleapis.com/css?family=Arvo:700);
 
 /* @Reset */
@@ -146,4 +150,11 @@ a {
 .open {
     -webkit-transform: translateY(10em);
     transform: translateY(15em);
+}
+
+.btn-primary{
+	margin-left: 575px;
+	width: 200px;
+	height: 50px;
+	background-color: gray;
 }
