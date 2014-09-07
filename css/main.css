@@ -21,9 +21,10 @@ div {
 }
 
 #name{
-	font-size: 100px;
+	font-size: 75px;
 	color: cornsilk;
 	margin-left: 75px;
+	font-family: 'Lemon', cursive;
 }
 
 #ham{
@@ -118,7 +119,7 @@ a {
 
 .menu {
     position: fixed;
-    top: -11em;
+    top: -12em;
     left: 0;
     width: 100%;
     background: black;
@@ -163,10 +164,10 @@ a {
 }
 
 #galtext{
-	font-size: 100px;
-	margin-top: 50px;
+	font-size: 75px;
 	color: cornsilk;
 	margin-left: 75px;
+	font-family: 'Lemon', cursive;
 }
 
 .carousel.slide{
@@ -201,6 +202,13 @@ a {
 	text-decoration: none;
 }
 
+#protext{
+	font-size: 75px;
+	color: cornsilk;
+	margin-left: 75px;
+	font-family: 'Lemon', cursive;
+}
+
 /* unvisited link */
 a:link {
     color: cornsilk;
@@ -219,4 +227,10 @@ a:hover {
 /* selected link */
 a:active {
     color: gray;
+}
+
+#gall{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1234px;
 }
