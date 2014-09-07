@@ -153,7 +153,7 @@ a {
     transform: translateY(15em);
 }
 
-.btn-primary{
+.btn.btn-primary{
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
@@ -176,5 +176,47 @@ a {
 }
 
 .modal-content{
-	height: 500px;
+	height: 120px;
+	text-align: left;
+}
+
+.links{
+	padding-bottom: 50px;
+	font-size: 30px;
+	text-align: center;
+}
+
+#Nam{
+	color: cornsilk;
+	text-decoration: none;
+}
+
+#Gal{
+	color: cornsilk;
+	text-decoration: none;
+}
+
+#Proj{
+	color: cornsilk;
+	text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: cornsilk;
+}
+
+/* visited link */
+a:visited {
+    color: gray;
+}
+
+/* mouse over link */
+a:hover {
+    color: gray;
+}
+
+/* selected link */
+a:active {
+    color: gray;
 }
